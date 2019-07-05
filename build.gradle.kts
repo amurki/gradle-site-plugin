@@ -12,6 +12,13 @@ plugins {
     kotlin("jvm") version "1.3.10"
 }
 
+allprojects {
+            ext."signing.keyId" = id
+            ext."signing.secretKeyRingFile" = file
+            ext."signing.password" = password
+        }
+
+
 val junitPlatformVersion = "1.1.0"
 val spekVersion = "2.0.0-rc.1"
 
